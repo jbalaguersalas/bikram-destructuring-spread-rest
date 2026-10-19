@@ -55,6 +55,25 @@ countTheArgs("gato", "perro"); //2
 countTheArgs("gato", "perro", "pollo", "oso"); //4
 
 function countTheArgs(...numeros) {
+    let totalargs = 0
+    for (let i= 0; i< numeros.length; i++){
+        totalargs = totalargs + 1
+    }
+    return totalargs
 
 }
+console.log(countTheArgs("gato","perro"));
+console.log(countTheArgs("gato","perro","pollo","oso"));
 //8.
+
+function combineTwoArrays(array1, array2) {
+    return [...array1, ...array2];
+}
+console.log (combineTwoArrays([1, 2, 3], [4, 5, 6]));
+//9.
+
+function onlyUniques(...elementos){
+    return [...new Set(elementos)];
+}
+console.log(onlyUniques("gato", "pollo", "cerdo", "cerdo")); 
+console.log(onlyUniques(1, 1, 2, 2, 3, 6, 7, 8)); 
