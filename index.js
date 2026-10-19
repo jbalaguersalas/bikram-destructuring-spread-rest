@@ -51,8 +51,8 @@ function addOnlyNums(...numeros) {
 console.log(addOnlyNums(1, "perro", 2, 4));
 
 //7.
-countTheArgs("gato", "perro"); //2
-countTheArgs("gato", "perro", "pollo", "oso"); //4
+countTheArgs("gato", "perro"); 
+countTheArgs("gato", "perro", "pollo", "oso"); 
 
 function countTheArgs(...numeros) {
     let totalargs = 0
