@@ -71,6 +71,9 @@ function combineTwoArrays(array1, array2) {
 }
 console.log (combineTwoArrays([1, 2, 3], [4, 5, 6]));
 //9.
+onlyUniques("gato", "pollo", "cerdo", "cerdo");
+onlyUniques(1, 1, 2, 2, 3, 6, 7, 8);
+
 function onlyUniques(...elementos) {
     let resultado = [];
     for (let i = 0; i < elementos.length; i++) {
