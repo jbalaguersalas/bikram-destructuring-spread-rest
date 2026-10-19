@@ -97,3 +97,13 @@ function combineAllArrays(...cualquierelemento) {
 }
 console.log(combineAllArrays([3,7,8,9],[2,7, 3, 1]));
 console.log(combineAllArrays([2, 7, 8, 3], [6, 44, 8, 4, 2], [4, 9, 5, 3,]));
+//11.
+function sumAndSquare (...argumentos) {
+    let resultado = 0
+    for (let i = 0; i < argumentos.length; i++) {
+        resultado = resultado + argumentos[i] * argumentos[i];
+
+    }
+    return resultado
+}
+console.log(sumAndSquare(1, 2, 3));
